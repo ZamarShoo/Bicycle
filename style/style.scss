@@ -438,6 +438,69 @@ TABLE {
     }
 }
 
+.five-slide {
+    margin-top: 120px;
+    min-height: 500px;
+    background-size: 100%;
+    background-image: url(/img/slide_5.png);
+
+    .l-five-col {
+        margin-top: 70px;
+
+        p {
+            margin-top: 25px;
+            color: #8e8d8a;
+        }
+    }
+
+    .buttons-place {
+        display: flex;
+        justify-content: space-between;
+        width: 315px;
+        height: 32px;
+        margin-bottom: 30px;
+    }
+
+    .checked-type {
+        p {
+            margin-top: 0px;
+        }
+    }
+
+    .r-col {
+        margin-top: 35px;
+
+        .left {
+            margin-right: 30px;
+        }
+
+        img {
+            padding-top: 65px;
+        }
+    }
+}
+
+.buttons {
+    display: none;
+}
+
+.radio-input {
+    display: inline-block;
+    width: 100px;
+    font-family: ProximaNova-Regular;
+    color: white;
+    font-size: 16px;
+    border: 2px solid #3d6bff;
+    border-radius: 4px;
+    height: 32px;
+    padding-top: 1px;
+    text-align: center;
+}
+
+.buttons:checked + .radio-input {
+    background-color: #3d6bff;
+}
+
 @media screen and (min-width: 1160px) {
     .navigation-phone,
     .nav-number-phone {
