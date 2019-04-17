@@ -476,6 +476,7 @@ TABLE {
 
         img {
             padding-top: 65px;
+            margin-right: 15px;
         }
     }
 }
@@ -497,8 +498,100 @@ TABLE {
     text-align: center;
 }
 
+.six-slide {
+    margin-top: 100px;
+    min-height: 790px;
+
+    TABLE {
+        margin-left: 0px;
+    }
+
+    .left-t {
+        width: 100px;
+    }
+
+
+    TD {
+        padding-top: 30px;
+        color: white;
+        width: 250px;
+    }
+
+
+}
+
+.six-img {
+    margin-top: -100px;
+    position: absolute;
+}
+
+
 .buttons:checked + .radio-input {
     background-color: #3d6bff;
+}
+
+
+.seven-slide {
+    margin-top: 100px;
+}
+
+.reviews {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.review {
+    position: relative;
+    width: 48%;  // 545px
+    height: 300px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px 40px;
+    box-shadow: 0 0 15px black;
+}
+
+
+.review-head {
+    display: flex;
+
+    .social {
+        right: 0;
+        position: absolute;
+        margin-top: 25px;
+        margin-right: 180px;
+        width: 35px;
+        height: 21px;
+    }
+
+    p {
+        font-family: ProximaNova-Bold;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    span {
+        position: absolute;
+        font-family: ProximaNova-Regular;
+        font-size: 14px;
+        margin-top: 50px;
+        margin-left: 105px;
+
+        a {
+            color: #8e8d8a;
+            text-decoration: underline;
+        }
+    }
+
+}
+
+.review-body {
+    margin-top: 20px;
+    
+    p {
+        color: #b7b7b7;
+    }
 }
 
 @media screen and (min-width: 1160px) {
@@ -626,6 +719,32 @@ TABLE {
         display: none;
         visibility: hidden;
     }
+}
+
+
+.pre-and-next {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 136px;
+}
+
+.pre-next {
+    background-color: #1e1e1e;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+}
+
+.pre {
+    background-image: url(/img/previcious.png);
+    
+}
+
+.next {
+    background-image: url(/img/next.png);
 }
 
 
