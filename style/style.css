@@ -330,6 +330,7 @@ TABLE .left-col {
 .line-2 {
   margin-left: 210px;
   z-index: 10;
+  box-shadow: 0 0 20px 15px black;
 }
 
 .line-3 {
