@@ -41,7 +41,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 60%;
+  width: 69.375%;
 }
 
 a {
@@ -61,6 +61,11 @@ a:hover {
   width: 120px;
   height: 1px;
   background-color: #3d6bff;
+}
+
+.line--big {
+  width: 255px;
+  height: 4px;
 }
 
 .line--small {
@@ -238,6 +243,171 @@ nav ul li {
 .bike {
   position: relative;
   z-index: 6;
+}
+
+.second-slide {
+  margin-top: 300px;
+}
+
+.elements {
+  margin-top: 90px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.element {
+  height: 620px;
+  width: 350px;
+  background-color: black;
+  border-radius: 10px;
+  margin-top: 45px;
+  box-shadow: 0 10px 15px black;
+}
+
+.element p {
+  font-family: ProximaNova-Bold;
+  margin-left: 30px;
+}
+
+.element img {
+  margin-top: 20px;
+}
+
+.element .name {
+  color: #cccccc;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.element .price {
+  margin-top: -20px;
+  font-size: 22px;
+}
+
+TABLE {
+  margin-left: 30px;
+  font-family: ProximaNova-Regular;
+  font-size: 14px;
+  color: white;
+  opacity: .5;
+}
+
+TABLE .left-col {
+  padding-top: 10px;
+  width: 150px;
+}
+
+.btn-elem {
+  font-family: ProximaNova-Bold;
+  color: white;
+  font-size: 15px;
+  background-color: #3d6bff;
+  width: 100%;
+  height: 50px;
+  padding-top: 15px;
+  text-align: center;
+  margin-top: 32px;
+  border-radius: 0 0 10px 10px;
+  letter-spacing: 0.08em;
+}
+
+.third-slide {
+  position: relative;
+  overflow: hidden;
+  background-image: url(/img/slide_3.png);
+  margin-top: 158px;
+  min-height: 500px;
+  background-size: 100%;
+}
+
+.third-slide img {
+  position: relative;
+  z-index: 7;
+}
+
+.line-2 {
+  margin-left: 210px;
+  z-index: 10;
+}
+
+.line-3 {
+  margin-left: 40px;
+}
+
+.third-right {
+  margin-top: 60px;
+}
+
+.third-right .p-70 {
+  width: 60%;
+  margin-top: 26px;
+  color: #8e8d8a;
+}
+
+.form-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+#input-number {
+  padding-left: 15px;
+  width: 70%;
+  color: #1e1e1e;
+  font-family: ProximaNova-Bold;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  height: 60px;
+  border-radius: 30px 0 0 30px;
+  border: 0px solid;
+}
+
+#submit-1 {
+  width: 30%;
+  height: 60px;
+  border-radius: 0 30px 30px 0;
+  border: 0px solid;
+  background-color: #3d6bff;
+  background-image: url(/img/send.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+#submit-1:active {
+  background-position: right;
+}
+
+.checked-type {
+  margin-top: 20px;
+}
+
+.checked-type #checked-input {
+  display: none;
+}
+
+.checked-type .checked-input {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-image: url(/img/chekbox-non.png);
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.checked-type #checked-input:checked + .checked-input {
+  background-image: url(/img/chekbox-yes.png);
+}
+
+.checked-type p {
+  margin-left: 25px;
+  color: #8e8d8a;
+}
+
+.checked-type p a {
+  color: #8e8d8a;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 1160px) {
