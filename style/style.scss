@@ -255,7 +255,7 @@ nav ul li {
 }
 
 .elements {
-    margin-top: 90px;
+    margin-top: 40px;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
@@ -264,6 +264,7 @@ nav ul li {
 
 
 .element {
+    position: relative;
     height: 620px;
     width: 350px;
     background-color: black;
@@ -415,6 +416,24 @@ TABLE {
             color: #8e8d8a;
             text-decoration: underline;
         }
+    }
+}
+
+
+.fourth-slide {
+    margin-top: 100px;
+
+    span {
+        position: absolute;
+        right: 0;
+        font-family: ProximaNova-Bold;
+        font-size: 15px;
+        color: white;
+        background-color: #3d6bff;
+        border-radius: 5px;
+        padding: 0 15px 0 15px;
+        margin-right: 30px;
+        margin-top: -41px;
     }
 }
 
