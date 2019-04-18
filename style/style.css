@@ -800,8 +800,10 @@ footer h1 {
 }
 
 .foo-r-col {
-  position: relative;
+  width: 100%;
   margin-top: 100px;
+  top: 0px;
+  right: 0px;
 }
 
 .foo-r-col h2 {
@@ -841,6 +843,55 @@ footer h1 {
   background-image: url(/img/telegram.png);
   width: 41px;
   height: 41px;
+}
+
+.form {
+  height: 60px;
+  margin-top: 50px;
+  width: 350px;
+  border-radius: 30px;
+}
+
+.form .checked-type {
+  width: 110%;
+  font-family: ProximaNova-Regular;
+  font-size: 14px;
+}
+
+.form .checked-type p {
+  margin-top: -13px;
+}
+
+.input-type-form {
+  border: 0px solid;
+  height: 60px;
+  margin-top: -10px;
+  width: 100%;
+  border-radius: 30px;
+  padding-left: 20px;
+  font-family: ProximaNova-Bold;
+  font-size: 15px;
+  color: #1e1e1e;
+  letter-spacing: 0.08em;
+}
+
+.form-btn input {
+  display: none;
+}
+
+.form-btn label {
+  margin-top: -10px;
+  width: 100%;
+  height: 60px;
+  background-color: #3d6bff;
+  text-align: center;
+  padding: 18px 60px 2px;
+  border-radius: 50px;
+  font-family: ProximaNova-Bold;
+  letter-spacing: 0.08em;
+  box-shadow: 0 0 20px #3d6bff;
+  animation: btn 2.5s infinite;
+  color: white;
 }
 
 @media screen and (min-width: 1160px) {
