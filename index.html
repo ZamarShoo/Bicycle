@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
         <link rel="stylesheet" href="/style/style.css">
     <title>Document</title>
 </head>
@@ -523,7 +524,22 @@
         <div class="container">
             <h1>Отзывы</h1>
             <div class="line line--big"></div>
-            <div class="reviews row">
+            <div class="reviews">
+                <div class="review">
+                    <div class="review-head">
+                        <img src="./img/review-face.png" alt="">
+                        <p>Дмитрий Егоров</p>
+                        <span><a href="">Читай отзыв</a></span>
+                        <img class="social" src="/img/vk-social-review.png" alt="">
+                    </div>
+                    <div class="review-body">
+                        <p>Здравствуйте. Заказал у вас велосипед для супруги.
+                             В интернете искал много предложений, на авито и т.д,
+                              но решил заказать у вас, потому что в наличии была
+                               именно та модель, которую хотел. Доставили в тот же
+                                день, через 2 часа велик был у меня.</p>
+                    </div>
+                </div>
                 <div class="review">
                     <div class="review-head">
                         <img src="./img/review-face.png" alt="">
@@ -557,15 +573,73 @@
             </div>
             <div class="slider-for">
                 <div class="pre-and-next">
-                    <label>
-                        <input class="pre-next pre" type="submit" value=" ">
-                    </label>
-                    <label>
-                        <input class="pre-next next" type="submit" value=" ">
-                    </label>
+                </div>
+                <div class="for-dots">
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="eight-slide">
+        <div class="container">
+            <h1>Часто задаваемые вопросы</h1>
+            <div class="line line--big"></div>
+        </div>
+        <div class="container elements">
+                <div class="element-hide">
+                    <input class="hide" id="hd-1" type="checkbox">
+                    <label for="hd-1"><p>Какая гарантия на велосипеды?</p>
+                    <img src="/img/arrow-down.png" alt=""></label>
+                    <div>
+                        HTML — стандартный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке HTML (или XHTML). Язык HTML интерпретируется браузерами и отображается в виде документа в удобной для человека форме..
+                    </div>
+                </div>
+                <div class="element-hide">
+                    <input class="hide" id="hd-2" type="checkbox">
+                    <label for="hd-2"><p>Можно ли сдать если не понравится?</p>
+                    <img src="/img/arrow-down.png" alt=""></label>
+                    <div>
+                        HTML — стандартный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке HTML (или XHTML). Язык HTML интерпретируется браузерами и отображается в виде документа в удобной для человека форме..
+                    </div>
+                </div>
+                <div class="element-hide">
+                    <input class="hide" id="hd-3" type="checkbox">
+                    <label for="hd-3"><p>Какая гарантия на велосипеды?</p>
+                    <img src="/img/arrow-down.png" alt=""></label>
+                    <div>
+                        HTML — стандартный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке HTML (или XHTML). Язык HTML интерпретируется браузерами и отображается в виде документа в удобной для человека форме..
+                    </div>
+                </div>
+                <div class="element-hide">
+                    <input class="hide" id="hd-4" type="checkbox">
+                    <label for="hd-4"><p>Какая комплектация велосипеда?</p>
+                    <img src="/img/arrow-down.png" alt=""></label>
+                    <div>
+                        HTML — стандартный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке HTML (или XHTML). Язык HTML интерпретируется браузерами и отображается в виде документа в удобной для человека форме..
+                    </div>
+                </div>
+                <div class="element-hide">
+                    <input class="hide" id="hd-5" type="checkbox">
+                    <label for="hd-5"><p>Каким способом осуществляется доставка?</p>
+                    <img src="/img/arrow-down.png" alt=""></label>
+                    <div>
+                        HTML — стандартный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке HTML (или XHTML). Язык HTML интерпретируется браузерами и отображается в виде документа в удобной для человека форме..
+                    </div>
+                </div>
+                <div class="element-hide">
+                    <input class="hide" id="hd-6" type="checkbox">
+                    <label for="hd-6"><p>Какими способами можно оплатить?</p>
+                    <img src="/img/arrow-down.png" alt=""></label>
+                    <div>
+                        HTML — стандартный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке HTML (или XHTML). Язык HTML интерпретируется браузерами и отображается в виде документа в удобной для человека форме..
+                    </div>
+                </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="/js/custom.js"></script>
 </body>
 </html>

@@ -499,7 +499,7 @@ TABLE {
 }
 
 .six-slide {
-    margin-top: 100px;
+    margin-top: 80px;
     min-height: 790px;
 
     TABLE {
@@ -525,6 +525,9 @@ TABLE {
     position: absolute;
 }
 
+.seven-slide {
+    margin-top: 80px;
+}
 
 .buttons:checked + .radio-input {
     background-color: #3d6bff;
@@ -537,13 +540,15 @@ TABLE {
 
 .reviews {
     margin-top: 100px;
-    display: flex;
-    justify-content: space-around;
+}
+
+.slick-slide {
+    margin: 0 15px;
 }
 
 .review {
     position: relative;
-    width: 48%;  // 545px
+    width: 545px;
     height: 300px;
     background-color: black;
     border-radius: 10px;
@@ -593,6 +598,160 @@ TABLE {
         color: #b7b7b7;
     }
 }
+
+.slider-for {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.for-dots {
+    margin-top: 20px;
+}
+
+.for-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.for-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+    border: 1px solid white;    
+    border-radius: 50%;
+  }
+
+  
+.for-dots li button:hover,
+.for-dots li button:focus {
+    background-color: #3d6bff;
+    border: 1px solid #3d6bff;
+}
+
+.for-dots li button:hover:before,
+.for-dots button:focus:before {
+  cursor: pointer;
+  background-color: #3d6bff;
+}
+
+.for-dots li button:before {
+  font-family: 'slick';
+  position: absolute;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  border: 1px solid white;
+  background-color: #3d6bff;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+.for-dots li.slick-active button:before {
+    background-color: #3d6bff;
+    border: 1px solid #3d6bff;
+}
+
+
+.eight-slide {
+    margin-top: 100px;
+
+    img {
+        position: absolute;
+        margin-top: -30px;
+        margin-left: 470px;
+    }
+}
+
+
+/* скрываем чекбоксы и блоки с содержанием */
+
+.element-hide {
+    margin-top: 30px;
+    width: 48%;
+}
+
+.hide,
+.hide + label ~ div {
+    display: none;
+}
+/* вид текста label */
+.hide + label {
+    padding: 17px 0 0 20px;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px black;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label img {
+    transform: rotate(180deg);
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block;
+    background: black;
+    margin-top: -15px;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px black;
+    /* чуточку анимации при появлении */
+     -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+}
+
+/* анимация при появлении скрытых блоков */
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 1160px) {
     .navigation-phone,
@@ -725,8 +884,8 @@ TABLE {
 .pre-and-next {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
-    width: 136px;
+    margin-top: 20px;
+    width: 126px;
 }
 
 .pre-next {
