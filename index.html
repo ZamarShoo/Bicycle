@@ -315,7 +315,7 @@
                  <div class="row">
                      <div class="form-input col-xl-7">
                          <label for="input-number"></label>
-                         <input id="input-number" type="text" placeholder="ВАШ НОМЕР">
+                         <input id="input-number" type="tel" name="phone" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" placeholder="ВАШ НОМЕР">
                          <label for="submit-1"><span class="checked-radio"></span></label>
                          <input id="submit-1" type="submit" value=" ">
                      </div>
@@ -452,22 +452,23 @@
             <div class="line line--big"></div>
             <p>Получите каталог удобным вам способом.</p>
             <div class="buttons-place">
+                <form action="">
                 <label>
-                    <input class="buttons" id="mail" type="radio">
+                    <input class="buttons" id="mail" type="radio" name="call" onclick="callForm('ВАШ E-MAIL', noMask)">
                     <span class="radio-input">e-mail</span>
                 </label>
                 <label>
-                    <input class="buttons" id="whatsApp" type="radio">
+                    <input class="buttons" id="whatsApp" type="radio" name="call" onclick="callForm('ВАШ WHAT`S APP', mask)">
                     <span class="radio-input">What's App</span>
                 </label>
                 <label>
-                    <input class="buttons" id="viber" type="radio">
+                    <input class="buttons" id="viber" type="radio" name="call" onclick="callForm('ВАШ VIBER', mask)">
                     <span class="radio-input">Viber</span>
                 </label>
             </div>
                 <div class="row col-xl-10 form-input">
-                    <label for="input-number"></label>
-                    <input id="input-number" type="text" placeholder="ВАШ E-MAIL">
+                    <label for="cellForm"></label>
+                    <input id="cellForm" type="text" placeholder="ВАШ E-MAIL">
                     <label for="submit-1"><span class="checked-radio"></span></label>
                     <input id="submit-1" type="submit" value=" ">
                 </div>
@@ -478,6 +479,7 @@
                         </label>
                         <p>я согласен с <a href="">политикой конфиденциальности</a></p>
                  </div>
+                </form>
             </div>
         <div class="r-col col-xl-6">
             <img src="/img/cervelo.png" alt="">
@@ -492,7 +494,7 @@
 
     <div class="six-slide">
         <div class="row container">
-            <div class="col-xl-7">
+            <div class="six-l-col col-xl-7">
                 <h1>Бесплатный тест-драйв перед покупкой</h1>
                 <div class="line line--big"></div>
                 <table>
@@ -684,6 +686,7 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="/js/jquery.maskedinput.min.js"></script>
 <script src="/js/custom.js"></script>
 </body>
 </html>

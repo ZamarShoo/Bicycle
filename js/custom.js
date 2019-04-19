@@ -37,3 +37,25 @@ $(function() {
         ]
     });
 })
+
+
+$(function(){
+  $("#input-number").mask("+7 (999) 999-99-99", {placeholder: " "});
+});
+
+$(function(){
+  $("#input-num").mask("+7 (999) 999-99-99", {placeholder: " "});
+});
+
+function mask() {$(function(){
+  $("#cellForm").mask("+7 (999) 999-99-99", {placeholder: " "});
+});}
+
+function noMask() {$(function(){
+  $("#cellForm").unmask();
+});}
+
+function callForm(type, needMask) {
+  if(needMask == mask) { mask() } else { noMask() }
+  document.getElementById('cellForm').placeholder=`${type}`;
+}

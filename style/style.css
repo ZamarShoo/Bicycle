@@ -365,6 +365,18 @@ TABLE .left-col {
   border: 0px solid;
 }
 
+#cellForm {
+  padding-left: 15px;
+  width: 70%;
+  color: #1e1e1e;
+  font-family: ProximaNova-Bold;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  height: 60px;
+  border-radius: 30px 0 0 30px;
+  border: 0px solid;
+}
+
 #submit-1 {
   width: 30%;
   height: 60px;
@@ -486,10 +498,12 @@ TABLE .left-col {
   height: 32px;
   padding-top: 1px;
   text-align: center;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .six-slide {
-  margin-top: 80px;
+  overflow: hidden;
   min-height: 790px;
 }
 
@@ -507,6 +521,10 @@ TABLE .left-col {
   width: 250px;
 }
 
+.six-slide .six-l-col {
+  margin-top: 80px;
+}
+
 .six-img {
   margin-top: -100px;
   position: absolute;
@@ -516,7 +534,11 @@ TABLE .left-col {
   margin-top: 80px;
 }
 
-.buttons:checked + .radio-input {
+.buttons:not(:checked) ~ .radio-input {
+  background-color: transparent;
+}
+
+.buttons:checked ~ .radio-input {
   background-color: #3d6bff;
 }
 
