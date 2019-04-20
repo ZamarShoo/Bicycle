@@ -1,3 +1,6 @@
+setTimeout(()=>popupThanks.hidden = true, 0);
+
+
 $(function() {
     $('.reviews').slick({
         dots: true,
@@ -58,4 +61,13 @@ function noMask() {$(function(){
 function callForm(type, needMask) {
   if(needMask == mask) { mask() } else { noMask() }
   document.getElementById('cellForm').placeholder=`${type}`;
+}
+
+function popupClose() {
+  setTimeout(()=>popupThanks.hidden = true, 2000);
+}
+
+function popupOpen() {
+  setTimeout(()=>popupThanks.hidden = false, 000);
+  popupClose();
 }
