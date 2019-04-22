@@ -325,14 +325,14 @@
                  <div class="row">
                      <div class="form-input col-xl-7">
                          <label for="input-number"></label>
-                         <input id="input-number" type="tel" name="phone" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" placeholder="ВАШ НОМЕР">
+                         <input required id="input-number" type="tel" name="phone" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" placeholder="ВАШ НОМЕР">
                          <label for="submit-1"><span class="checked-radio"></span></label>
                          <input id="submit-1" type="submit" value=" " onclick="popupOpen()">
                      </div>
                  </div>
                  <div class="row col-xl-7 checked-type">
                         <label>
-                            <input id="checked-input" type="checkbox">
+                            <input required id="checked-input" type="checkbox">
                             <span class="checked-input"></span>
                         </label>
                         <p>я согласен с <a href="">политикой конфиденциальности</a></p>
@@ -485,7 +485,7 @@
                 </div>
                 <div class="row col-xl-12 checked-type">
                         <label>
-                            <input id="checked-input" type="checkbox">
+                            <input id="checked-input" type="checkbox" required>
                             <span class="checked-input"></span>
                         </label>
                         <p>я согласен с <a href="">политикой конфиденциальности</a></p>
